@@ -3,7 +3,7 @@
 #include "global.h"
 
 
-extern void test_function_jni_side();
+extern void test_function_jni_side(JNIEnv *env, jobject thiz);
 
 static JNINativeMethod native_methods[] = {
         {"jni_side_test_function", "()V", (void*)test_function_jni_side},
